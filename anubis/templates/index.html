@@ -1,0 +1,16 @@
+{%  extends 'base.html' %}
+
+
+{% block title %}Index page{% endblock %}
+{% block additional_css %}
+    {{ block.super }}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-grid.css' %}">
+{% endblock %}
+{% block content %}
+    <h1>Welcome to my child page</h1>
+    {% load static %}
+    <img src="https://pbs.twimg.com/media/Eo9zhQKWMAE6vRp.jpg">
+
+
+{% endblock %}
