@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-grid.css' %}">
 {% endblock %}
 {% block content %}
+    {% if message %}
+        <h1>{{ message }}</h1>
+    {% endif %}
  <form method="post" enctype="multipart/form-data">
  {% csrf_token %}
  <input id="cnv" name="cnv" multiple type="file">

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import numpy as np
-
+from .utils import data_set
 
 # Create your views here.
 
@@ -13,8 +13,9 @@ def index(request):
 def upload_images(request):
     if request.method == "POST":
         try:
-            cnv_img = np.array(request.FILES.get('cnv').read())
-            cnv_img_label = int(len(cnv_img))
+            cnv_img = request.FILES.getlist('cnv')
+            tensorf_data = data_set(cnv_img)
+            print(tensorf_data)
             context = {"message": "success"}
             return render(request, 'img_upload.html', context=context)
         except Exception as e:
