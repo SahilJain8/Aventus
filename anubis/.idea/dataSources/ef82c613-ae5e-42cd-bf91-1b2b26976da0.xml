@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Aventus">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.48">
+    <root id="1">
+      <ServerVersion>6.0.6</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="aventus"/>
+    <schema id="4" parent="1" name="local"/>
+    <schema id="5" parent="1" name="test">
+      <Current>1</Current>
+    </schema>
+    <table id="6" parent="3" name="__schema__"/>
+    <table id="7" parent="3" name="auth_group"/>
+    <table id="8" parent="3" name="auth_group_permissions"/>
+    <table id="9" parent="3" name="auth_permission"/>
+    <table id="10" parent="3" name="auth_user"/>
+    <table id="11" parent="3" name="auth_user_groups"/>
+    <table id="12" parent="3" name="auth_user_user_permissions"/>
+    <table id="13" parent="3" name="django_admin_log"/>
+    <table id="14" parent="3" name="django_content_type"/>
+    <table id="15" parent="3" name="django_migrations"/>
+    <table id="16" parent="3" name="django_session"/>
+    <table id="17" parent="3" name="metadata"/>
+    <column id="18" parent="6" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="19" parent="6" name="auto">
+      <DasType>Object|4999544s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="20" parent="6" name="fields">
+      <DasType>Object|4999544s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="21" parent="6" name="name">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="22" parent="6" name="auto.field_names">
+      <DasType>Array|2003s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="23" parent="6" name="fields.action_flag">
+      <DasType>Object|4999544s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="24" parent="6" name="auto.seq">
+      <DasType>Int32|4s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="25" parent="6" name="fields.action_flag.type_code">
+      <DasType>String|12s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="26" parent="6" name="fields.action_time">
+      <DasType>Object|4999544s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="27" parent="6" name="fields.action_time.type_code">
+      <DasType>String|12s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="28" parent="6" name="fields.app">
+      <DasType>Object|4999544s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="29" parent="6" name="fields.app.type_code">
+      <DasType>String|12s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="30" parent="6" name="fields.app_label">
+      <DasType>Object|4999544s</DasType>
+      <Position>8</Position>
+    </column>
+    <column id="31" parent="6" name="fields.app_label.type_code">
+      <DasType>String|12s</DasType>
+      <Position>9</Position>
+    </column>
+    <column id="32" parent="6" name="fields.applied">
+      <DasType>Object|4999544s</DasType>
+      <Position>10</Position>
+    </column>
+    <column id="33" parent="6" name="fields.applied.type_code">
+      <DasType>String|12s</DasType>
+      <Position>11</Position>
+    </column>
+    <column id="34" parent="6" name="fields.change_message">
+      <DasType>Object|4999544s</DasType>
+      <Position>12</Position>
+    </column>
+    <column id="35" parent="6" name="fields.change_message.type_code">
+      <DasType>String|12s</DasType>
+      <Position>13</Position>
+    </column>
+    <column id="36" parent="6" name="fields.codename">
+      <DasType>Object|4999544s</DasType>
+      <Position>14</Position>
+    </column>
+    <column id="37" parent="6" name="fields.codename.type_code">
+      <DasType>String|12s</DasType>
+      <Position>15</Position>
+    </column>
+    <column id="38" parent="6" name="fields.content_type_id">
+      <DasType>Object|4999544s</DasType>
+      <Position>16</Position>
+    </column>
+    <column id="39" parent="6" name="fields.content_type_id.type_code">
+      <DasType>String|12s</DasType>
+      <Position>17</Position>
+    </column>
+    <column id="40" parent="6" name="fields.date_joined">
+      <DasType>Object|4999544s</DasType>
+      <Position>18</Position>
+    </column>
+    <column id="41" parent="6" name="fields.date_joined.type_code">
+      <DasType>String|12s</DasType>
+      <Position>19</Position>
+    </column>
+    <column id="42" parent="6" name="fields.email">
+      <DasType>Object|4999544s</DasType>
+      <Position>20</Position>
+    </column>
+    <column id="43" parent="6" name="fields.email.type_code">
+      <DasType>String|12s</DasType>
+      <Position>21</Position>
+    </column>
+    <column id="44" parent="6" name="fields.expire_date">
+      <DasType>Object|4999544s</DasType>
+      <Position>22</Position>
+    </column>
+    <column id="45" parent="6" name="fields.expire_date.type_code">
+      <DasType>String|12s</DasType>
+      <Position>23</Position>
+    </column>
+    <column id="46" parent="6" name="fields.first_name">
+      <DasType>Object|4999544s</DasType>
+      <Position>24</Position>
+    </column>
+    <column id="47" parent="6" name="fields.first_name.type_code">
+      <DasType>String|12s</DasType>
+      <Position>25</Position>
+    </column>
+    <column id="48" parent="6" name="fields.group_id">
+      <DasType>Object|4999544s</DasType>
+      <Position>26</Position>
+    </column>
+    <column id="49" parent="6" name="fields.group_id.type_code">
+      <DasType>String|12s</DasType>
+      <Position>27</Position>
+    </column>
+    <column id="50" parent="6" name="fields.id">
+      <DasType>Object|4999544s</DasType>
+      <Position>28</Position>
+    </column>
+    <column id="51" parent="6" name="fields.id.type_code">
+      <DasType>String|12s</DasType>
+      <Position>29</Position>
+    </column>
+    <column id="52" parent="6" name="fields.is_active">
+      <DasType>Object|4999544s</DasType>
+      <Position>30</Position>
+    </column>
+    <column id="53" parent="6" name="fields.is_active.type_code">
+      <DasType>String|12s</DasType>
+      <Position>31</Position>
+    </column>
+    <column id="54" parent="6" name="fields.is_staff">
+      <DasType>Object|4999544s</DasType>
+      <Position>32</Position>
+    </column>
+    <column id="55" parent="6" name="fields.is_staff.type_code">
+      <DasType>String|12s</DasType>
+      <Position>33</Position>
+    </column>
+    <column id="56" parent="6" name="fields.is_superuser">
+      <DasType>Object|4999544s</DasType>
+      <Position>34</Position>
+    </column>
+    <column id="57" parent="6" name="fields.is_superuser.type_code">
+      <DasType>String|12s</DasType>
+      <Position>35</Position>
+    </column>
+    <column id="58" parent="6" name="fields.last_login">
+      <DasType>Object|4999544s</DasType>
+      <Position>36</Position>
+    </column>
+    <column id="59" parent="6" name="fields.last_login.type_code">
+      <DasType>String|12s</DasType>
+      <Position>37</Position>
+    </column>
+    <column id="60" parent="6" name="fields.last_name">
+      <DasType>Object|4999544s</DasType>
+      <Position>38</Position>
+    </column>
+    <column id="61" parent="6" name="fields.last_name.type_code">
+      <DasType>String|12s</DasType>
+      <Position>39</Position>
+    </column>
+    <column id="62" parent="6" name="fields.model">
+      <DasType>Object|4999544s</DasType>
+      <Position>40</Position>
+    </column>
+    <column id="63" parent="6" name="fields.model.type_code">
+      <DasType>String|12s</DasType>
+      <Position>41</Position>
+    </column>
+    <column id="64" parent="6" name="fields.name">
+      <DasType>Object|4999544s</DasType>
+      <Position>42</Position>
+    </column>
+    <column id="65" parent="6" name="fields.name.type_code">
+      <DasType>String|12s</DasType>
+      <Position>43</Position>
+    </column>
+    <column id="66" parent="6" name="fields.object_id">
+      <DasType>Object|4999544s</DasType>
+      <Position>44</Position>
+    </column>
+    <column id="67" parent="6" name="fields.object_id.type_code">
+      <DasType>String|12s</DasType>
+      <Position>45</Position>
+    </column>
+    <column id="68" parent="6" name="fields.object_repr">
+      <DasType>Object|4999544s</DasType>
+      <Position>46</Position>
+    </column>
+    <column id="69" parent="6" name="fields.object_repr.type_code">
+      <DasType>String|12s</DasType>
+      <Position>47</Position>
+    </column>
+    <column id="70" parent="6" name="fields.password">
+      <DasType>Object|4999544s</DasType>
+      <Position>48</Position>
+    </column>
+    <column id="71" parent="6" name="fields.password.type_code">
+      <DasType>String|12s</DasType>
+      <Position>49</Position>
+    </column>
+    <column id="72" parent="6" name="fields.permission_id">
+      <DasType>Object|4999544s</DasType>
+      <Position>50</Position>
+    </column>
+    <column id="73" parent="6" name="fields.permission_id.type_code">
+      <DasType>String|12s</DasType>
+      <Position>51</Position>
+    </column>
+    <column id="74" parent="6" name="fields.session_data">
+      <DasType>Object|4999544s</DasType>
+      <Position>52</Position>
+    </column>
+    <column id="75" parent="6" name="fields.session_data.type_code">
+      <DasType>String|12s</DasType>
+      <Position>53</Position>
+    </column>
+    <column id="76" parent="6" name="fields.session_key">
+      <DasType>Object|4999544s</DasType>
+      <Position>54</Position>
+    </column>
+    <column id="77" parent="6" name="fields.session_key.type_code">
+      <DasType>String|12s</DasType>
+      <Position>55</Position>
+    </column>
+    <column id="78" parent="6" name="fields.user_id">
+      <DasType>Object|4999544s</DasType>
+      <Position>56</Position>
+    </column>
+    <column id="79" parent="6" name="fields.user_id.type_code">
+      <DasType>String|12s</DasType>
+      <Position>57</Position>
+    </column>
+    <column id="80" parent="6" name="fields.username">
+      <DasType>Object|4999544s</DasType>
+      <Position>58</Position>
+    </column>
+    <column id="81" parent="6" name="fields.username.type_code">
+      <DasType>String|12s</DasType>
+      <Position>59</Position>
+    </column>
+    <column id="82" parent="9" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="83" parent="9" name="codename">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="84" parent="9" name="id">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="85" parent="9" name="name">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="86" parent="9" name="content_type_id">
+      <DasType>Int32|4s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="87" parent="14" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="88" parent="14" name="app_label">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="89" parent="14" name="id">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="90" parent="14" name="model">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="91" parent="15" name="_id">
+      <DasType>ObjectId|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="92" parent="15" name="app">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="93" parent="15" name="applied">
+      <DasType>ISODate|91s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="94" parent="15" name="id">
+      <DasType>Int32|4s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="95" parent="15" name="name">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+  </database-model>
+</dataSource>

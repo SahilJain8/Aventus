@@ -1,0 +1,58 @@
+{%  extends 'server_base.html' %}
+
+
+{% block title %}Classfication{% endblock %}
+{% block additional_css %}
+    {{ block.super }}
+    {% load static %}
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+ 
+    </style>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    {% endblock %}
+    {% block content %}
+    <header class="masthead" style="background-image: url('https://images.pexels.com/videos/3045163/free-video-3045163.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500');">
+        <div class="container pt-4 pt-xl-5" >
+            <div class="row pt-5">
+                <div class="col-md-8 text-center text-md-start mx-auto" >
+                    <img src="">
+    <table>
+        <tr>
+            <th>Client Name</th>
+            <th>Model Accuracy</th>
+            <th>Model Loss</th>
+        </tr>
+        {% for item in result %}
+            <tr>
+           
+                <td style="color: white;">{{ item.name }}</td>
+                <td style="color: white;"> {{ item.accuracy }}</td>
+                <td style="color: white;">{{ item.loss }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <header class="masthead" >
+       
+    </header> -->
+   
+
+    {% endblock %}

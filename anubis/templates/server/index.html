@@ -1,0 +1,38 @@
+{%  extends 'server_base.html' %}
+
+
+{% block title %}Index page{% endblock %}
+{% block additional_css %}
+{{ block.super }}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-grid.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/img.css' %}">
+{% endblock %}
+{% block content %}
+<header class="pt-5">
+    <div class="container pt-4 pt-xl-5">
+        <div class="row pt-5">
+            <div class="col-md-8 text-center text-md-start mx-auto">
+                <div class="text-center">
+                    <h1 class="display-4 fw-bold mb-5" style="padding-left: 0px;margin-right: -215px;margin-top: 10px;margin-bottom: 30px;padding-bottom: 0px;margin-left: -211px;">Cognitive Resilience</h1>
+                    <h5 class="fw-normal text-muted mb-lg-4 pt-lg-0 pt-sm-0 pt-md-0 mt-lg-3 mt-xl-4" style="margin-top: 35px;margin-bottom: -16px ;color: white;">Transforming Mental Health Together</h5>
+                    <form class="d-flex justify-content-center flex-wrap" method="post">
+                        <div class="shadow-lg mb-3"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10 mx-auto">
+                <div class="text-center position-relative"><img class="img-fluid" src="https://t3.ftcdn.net/jpg/01/99/28/44/360_F_199284465_Taqp0eLGZsaOfTABNjPUVXBgzOcCU3Vo.jpg">
+        </div>
+    </div>
+</header>
+<section>
+
+<form method="post">
+{%  csrf_token %}
+
+
+
+</form>
+
+{% endblock %}
